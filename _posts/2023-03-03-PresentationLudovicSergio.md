@@ -2,7 +2,7 @@
 layout: description
 title: Qui sommes-nous?
 # Lien vers l'image de l'article (par défaut /assets/images/)
-image: /assets/images/Photo2.jpg
+image: "{{ root_url }}/assets/images/Photo2.jpg"
 # Texte alternatif donné à la balise image pour l'accessibilité, il doit décrire l'image succintement.
 images-alt-text: "Une photo de Sergio et Ludovic"
 reversed: "True"
