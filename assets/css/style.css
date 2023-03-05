@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Authoritative';
+    src: url('/assets/fonts/Authoritative.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #fcede3;
+    font-family: 'Montserrat';
+    height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s, height 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#main-menu {
+    display: block;
+    background-color: #fcede3;
+    width: 100%;
+    z-index: 9;
+}
+
+#main-menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+    padding: 0;
+}
+
+#main-menu li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    flex: 1 1 auto;
+}
+
+#main-menu li:nth-child(1) {
+    padding-left: 2rem;
+}
+
+#main-menu a:hover {
+    text-decoration: underline;
+}
+
+#main-menu a {
+    color:#6b1c22;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+#rosette {
+    display: none;
+    font-family: "Authoritative";
+    font-size: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: center;
+    flex: 1;
+    align-self: center;
+    color: #6b1c22;
+    font-weight: 600;
+}
+
+#rosette-menu {
+    font-family: "Authoritative";
+    font-size: 4rem;
+    color: #6b1c22;
+
+}
+
+#sidebar-menu ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#sidebar-menu ul li a {
+    text-decoration: none;
+    color: #fcede3;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+#sidebar-menu h3 {
+    color: #fcede3;
+    font-weight: 900;
+}
+
+#hamburger-menu {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: none;
+    border: none;
+    z-index: 5;
+    padding: 0px;
+    margin: 1rem;
+    background: linear-gradient(
+      to bottom, 
+      #6b1c22, #6b1c22 20%, 
+      #fcede3 20%, #fcede3 40%, 
+      #6b1c22 40%, #6b1c22 60%, 
+      #fcede3 60%, #fcede3 80%, 
+      #6b1c22 80%, #6b1c22 100%
+    );
+}
+
+#hamburger-input{
+    display: none;
+}
+
+#hamburger-menu #sidebar-menu {
+    /* visibility: hidden; */
+    position: fixed;
+    width: 20rem;
+    top: 0;
+    left: -20rem;
+    transition: left 0.5s;
+    height: 100%;
+    background-color: #6b1c22;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem; 
+}
+
+#hamburger-menu a {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+   opacity: 0.4;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.rosette-landing {
+    margin-right: 5rem;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.caroussel-size {
+    width: 50%
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    margin: 5rem;
+    width: 50%;
+}
+
+.welcome-container p {
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 80rem) {
+    #main-menu {
+        display: none;
+    }
+    #hamburger-menu {
+        display: flex;
+    }
+    #rosette {
+        display: initial;
+    }
+    .rosette-landing {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 0px;
+    }
+    .caroussel-size {
+        width: 100%;
+    }
+    .welcome-container {
+        margin: 0px;
+        width: 100%;
+    }
+    .welcome-container p  {
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+    
+}
+  

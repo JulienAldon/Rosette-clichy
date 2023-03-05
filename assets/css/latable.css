@@ -1,0 +1,57 @@
+#table {
+    margin: 5rem;
+}
+
+.table-img {
+    height: 20vw;
+    flex: 1 1 auto;
+    align-self: center;
+    padding: 2rem;}
+
+#table article {
+    display: flex;
+}
+
+#table h2 {
+    padding-bottom: 2rem
+}
+
+#table article .titlebox {
+    flex-flow: column;
+    margin: 1rem 2rem 1rem 1rem;
+    font-size: 1.3rem;
+    align-self: center;
+    /* padding: 3rem; */
+}
+
+#table article .textbox {
+    flex-flow: column;
+    align-self: left;
+    text-align: left;
+    display: flex;
+}
+
+#table article .textbox a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#table article .textbox a:hover {
+    text-decoration:underline;
+}
+
+#table i {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 80rem) {
+    #table article {   
+        flex-flow: column;
+    }
+    
+    #table {
+        margin: 1rem;
+    }
+}
