@@ -2,7 +2,7 @@
 layout: description
 title: Qui sommes-nous?
 # Lien vers l'image de l'article (par défaut /assets/images/)
-image: "/rosette-clichy/assets/images/rosette-logo.jpg"
+image: "/Rosette-clichy/assets/images/rosette-logo.jpg"
 # Texte alternatif donné à la balise image pour l'accessibilité, il doit décrire l'image succintement.
 images-alt-text: "Le logo Rosette"
 reversed: "False"
