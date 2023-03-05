@@ -29,6 +29,7 @@
     align-self: left;
     text-align: left;
     display: flex;
+    padding-left: 1rem;
 }
 
 #table article .textbox a {
