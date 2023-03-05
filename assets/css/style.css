@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Authoritative';
-    src: url("{{ site.baseurl }}/assets/fonts/Authoritative.otf");
+    src: url("Authoritative.otf");
 }
 
 @font-face {
