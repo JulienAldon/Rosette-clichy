@@ -26,24 +26,13 @@
 
 .description-img {
     height: 30vw;
+    width: unset;
     flex: 1 1 auto;
     align-self: center;
     padding: 2rem;
 }
 
-#description h2 {
-    font-size: 2rem;
-}
-
-#description {
-    margin: 5rem;
-}
-
 @media screen and (max-width: 80rem) {
-    #description {
-        margin: 1rem;
-    }
-
     .description-row {
         flex-flow: column;
     }
@@ -55,6 +44,8 @@
     }
 
     .description-img {
+        height: 100%;
+        width: 100%;
         margin: 2rem;
         align-self: center;
     }

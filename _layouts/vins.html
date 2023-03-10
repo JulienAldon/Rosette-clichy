@@ -1,0 +1,13 @@
+<section id="vins">
+    <h2>{{ page.title }}</h2>
+    <article>
+        <div class="vins-container">
+        {{ content }}
+        </div>
+        <aside>
+            {% for image in page.images %}
+                <img class="vins-img" src="{{ image.image }}" alt="{{ alt-txts[forloop.index] }}"></img>
+            {% endfor %}
+        </aside>
+    </article>
+</section>

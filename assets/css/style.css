@@ -7,10 +7,25 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@font-face {
+    font-family: 'Tinos', serif;
+}
+
 body {
     background: #fcede3;
     font-family: 'Montserrat';
     height: 100vh;
+}
+
+section {
+    margin: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Tinos';
+    margin: 0rem;
 }
 
 .overlay {
@@ -185,6 +200,9 @@ body {
 
 
 @media screen and (max-width: 80rem) {
+    section {
+        margin: 1rem;
+    }
     #main-menu {
         display: none;
     }

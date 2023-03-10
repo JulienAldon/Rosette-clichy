@@ -1,19 +1,9 @@
-#table {
-    margin: 5rem;
-}
-
 .table-img {
-    height: 20vw;
-    flex: 1 1 auto;
-    align-self: center;
+    height: 30vw;
     padding: 2rem;}
 
 #table article {
     display: flex;
-}
-
-#table h2 {
-    padding-bottom: 2rem
 }
 
 #table article .titlebox {
@@ -21,7 +11,6 @@
     margin: 1rem 2rem 1rem 1rem;
     font-size: 1.3rem;
     align-self: center;
-    /* padding: 3rem; */
 }
 
 #table article .textbox {
@@ -51,8 +40,7 @@
     #table article {   
         flex-flow: column;
     }
-    
-    #table {
-        margin: 1rem;
+    .table-img {
+        height: unset        
     }
 }
