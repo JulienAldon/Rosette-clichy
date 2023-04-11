@@ -1,0 +1,44 @@
+footer {
+    font-size: 1.2rem;
+    flex:0;
+    padding: 1.3rem;
+}
+
+footer ul {
+    justify-content: center;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 1rem
+}
+
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 80rem) {
+    footer {
+        flex: 0;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.2rem;
+    }
+
+    footer ul {
+        padding: 0.3rem;
+    }
+
+    footer li {
+        padding-right: 0.2rem;
+    }
+}

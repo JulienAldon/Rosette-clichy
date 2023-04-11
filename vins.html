@@ -1,0 +1,22 @@
+---
+layout: main
+permalink: vins
+title: Les vins
+subtitle: "<cite>\"Le vin est la partie intellectuelle d'un repas. Les viandes et les légumes n'en sont que la partie matérielle\"</cite>. Alexandre Dumas"
+images:
+    - img: "/assets/images/assiette1.jpg"
+      alt: "Beau vin"
+    - img: "/assets/images/assiette2.jpg"
+      alt: "Beau vin"
+    - img: "/assets/images/assiette3.jpg"
+      alt: "Beau vin"
+    - img: "/assets/images/assiette1.jpg"
+      alt: "Beau vin"
+---
+<section id="vins">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.subtitle }}</h2>
+    {% for img in page.images %}
+        <img alt="{{ img.alt }}" src="{{ img.img }}"></img>
+    {% endfor %}
+</section>

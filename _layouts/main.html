@@ -4,34 +4,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1,width=device-width">
 		<title>{{ page.title }}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Tinos:wght@400;700&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/description.css">
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/latable.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/navigation.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/homepage.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/footer.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/table.css">
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/vins.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/description.css">
 		<link rel="stylesheet" href="https://kit.fontawesome.com/08db035529.css" crossorigin="anonymous">
   	</head>
 	<body>
 		{% include navigation.html %}
-		
-		<!-- Landing -->
-		{{ site.posts[0] }}
-		<!-- Description block -->
-		<section id="description">
-			<h2>{{ site.posts[1].title }}</h2>
-			{{ site.posts[3] }} 
-			{{ site.posts[2] }}
-			{{ site.posts[1] }}
-		</section>
-		<!-- La table -->
-		{{ site.posts[4] }}
-		<!-- Les vins -->
-		{{ site.posts[5] }}
-
-		<footer>
-		</footer>
+		{{ content }}
+		{% include footer.html %}
 	</body>
 	<script src="https://kit.fontawesome.com/08db035529.js" crossorigin="anonymous"></script>
 </html>

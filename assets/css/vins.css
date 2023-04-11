@@ -1,8 +1,23 @@
-.vins-img {
-    width: 10rem;
+#vins {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
 }
 
-.vins-container p {
-    font-size: 1.3rem;
-    padding: 1rem;
+#vins img {
+    padding:1.4rem;
+    justify-content: center;
+    width: 60vw;
+    height: 80rem;
+    object-fit: cover;
+    align-self: center;
+}
+
+@media screen and (max-width: 80rem) {
+    #vins img {
+        height: 25rem;
+        width: 20rem;
+        object-fit: cover;
+        padding: 1.4rem;
+    }
 }

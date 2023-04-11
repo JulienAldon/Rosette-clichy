@@ -22,11 +22,11 @@ title: Rosette Clichy
 email: julien.aldon@epitech.com
 description: >- # this means to ignore newlines until "baseurl:"
   Rosette clichy est un réstaurant en plein coeur de clichy, découvrez son menu, ses vin, et ses horraires.
-baseurl: /Rosette-clichy
 url: https://julienaldon.github.io
+instagram_url: https://instagram.com
+facebook_url: https://facebook.com
+zenchef_url: https://zenchef.com
 
-
-# Build settings
 theme: minima
 plugins:
   - jekyll-feed

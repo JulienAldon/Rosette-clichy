@@ -1,0 +1,17 @@
+---
+layout: main
+title: "Bienvenue chez Rosette !"
+carousels:
+    - images:
+        - image: "/assets/images/restaurant.jpg"
+        - image: "/assets/images/restaurant.jpg"
+        - image: "/assets/images/restaurant.jpg"
+        - image: "/assets/images/restaurant.jpg"
+calltoaction: Decouvrez Rosette
+---
+<section id="rosette-landing" class="rosette-landing">
+    <h1>{{ page.title }}</h1>
+	<div class="carousel-size">
+		{% include carousel.html unit="%" height="30" duration="6" number="1" %}
+	</div>		
+</section>

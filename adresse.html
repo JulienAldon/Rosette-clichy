@@ -1,0 +1,23 @@
+---
+layout: main
+permalink: adresse
+title: L'adresse
+adresse: 77 rue de Paris
+telephone: 01 01 01 01 01
+image: /assets/images/1.jpg
+---
+<section id="address">
+    <h2>{{ page.title }}</h2>
+    <article>
+        <img class="addr_img" src="{{ page.image }}"></img>
+        <div>
+            <ul>
+                <li>{{ page.adresse }}</li>
+                <li><a href="{{ site.instagram_url }}"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="{{ site.facebook_url }}"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><i class="fa-solid fa-phone"> {{ page.telephone }}</i></li>
+            </ul>
+            <li><a href="{{ site.zenchef_url }}">Reserver en ligne</a></li>
+        </div>
+    </article>
+</section>

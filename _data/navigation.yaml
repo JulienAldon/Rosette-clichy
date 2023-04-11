@@ -1,0 +1,11 @@
+nav:
+  - title: La table
+    url: /table
+  - title: Qui sommes nous ?
+    url: /description
+  - title: Les vins
+    url: /vins
+  - title: L'adresse
+    url: /adresse
+  - title: Ils nous ont aidés
+    url: /help

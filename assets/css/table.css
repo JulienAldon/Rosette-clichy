@@ -1,0 +1,25 @@
+#table {
+    padding-top: 7rem;
+}
+
+#table img {
+    height: 25rem;
+    width: 20rem;
+    object-fit: cover;
+    padding: 1.4rem;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 80rem) {
+    .image-row {
+        flex-direction: column;
+    }
+    #table {
+        padding-top: 2rem;
+    }
+}
