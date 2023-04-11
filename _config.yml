@@ -26,7 +26,7 @@ url: https://julienaldon.github.io
 instagram_url: https://instagram.com
 facebook_url: https://facebook.com
 zenchef_url: https://zenchef.com
-
+baseurl: /
 theme: minima
 plugins:
   - jekyll-feed
