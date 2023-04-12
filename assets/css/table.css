@@ -10,6 +10,7 @@
 }
 
 .image-row {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,6 +18,7 @@
 
 @media screen and (max-width: 80rem) {
     .image-row {
+        align-items: center;
         flex-direction: column;
     }
     #table {

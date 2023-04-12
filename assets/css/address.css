@@ -1,0 +1,34 @@
+
+#address {
+    padding-top: 7rem;
+}
+
+#address article{
+    display: flex;
+    flex-direction: column;
+}
+
+#address article h2 {
+    padding: 0px;
+}
+
+#address article a {
+    text-decoration: none;
+    color: #6b1e24;
+}
+
+#address article a:hover {
+    text-decoration: underline;
+}
+
+#address iframe {
+    /* width: 90vw; */
+    align-self: center;
+}
+
+@media screen and (max-width: 80rem) {
+    #address iframe {
+        width: 90vw;
+        align-self: center;
+    }
+}

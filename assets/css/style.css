@@ -9,6 +9,7 @@
 }
 
 body {
+    justify-content: space-between;
     font-family: 'Century';
     background: #fffcf6;
     color: #6b1e24;
