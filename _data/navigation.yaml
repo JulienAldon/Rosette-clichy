@@ -9,3 +9,5 @@ nav:
     url: /adresse
   - title: Ils nous ont aidés
     url: /help
+  - title: Reservation
+    url: /reservation
