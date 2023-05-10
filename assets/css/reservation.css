@@ -1,0 +1,24 @@
+#reservation {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    flex: 1;
+}
+
+#reservation p {
+    display: flex;
+    align-self: center;
+    width: 60vw;
+    font-size: 1.2rem;
+}
+
+#reservation a {
+    align-self: center;
+    text-decoration: none;
+    color: #6b1e24;
+    font-size: 1.5rem;
+}
+
+#reservation a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+#help {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    flex: 1;
+}
+
+#help p {
+    display: flex;
+    align-self: center;
+    width: 60vw;
+    font-size: 1.2rem;
+}

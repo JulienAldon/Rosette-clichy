@@ -1,13 +1,13 @@
 nav:
-  - title: La table
+  - title: À table !
     url: /table
-  - title: Qui sommes nous ?
-    url: /description
-  - title: Les vins
+  - title: Notre sélection de vins
     url: /vins
   - title: L'adresse
     url: /adresse
+  - title: Qui sommes nous ?
+    url: /description
   - title: Ils nous ont aidés
     url: /help
-  - title: Reservation
+  - title: Rosette sur mesure
     url: /reservation
