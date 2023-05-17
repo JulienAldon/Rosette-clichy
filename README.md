@@ -32,7 +32,7 @@
 Tout est automatique via `Github Action`.
 Dès qu'un changement à été enregistré sur l'interface et `push` une action se lance et répercute les modifications sur le site en production.
 
-# 4 - Gestion du site
+# 3 - Gestion du site
 ## 1 - Ajouter une page
 - Créer à la racine du dépot un nouveau fichier `.html` nommé après la page que vous souhaitez créer.
 - Ajouter une entrée dans le fichier [navigation.yaml](./_data/navigation.yaml) précisant le titre de la page et l'url.
@@ -71,3 +71,53 @@ images:
     [...]
 </section>
 ```
+## 3 - Modifier les menu
+Il y a 3 menu actifs décrits par ces fichiers:
+- [menu_soir](_data/menu_soir.yaml)
+- [menu_midi](_data/menu_midi.yaml)
+- [menu_carte](_data/menu_carte.yaml)
+
+Vous pouvez changer le contenu des variables dans le fichier de configuration correspondant mais attention les noms des variables sont importante. 
+
+- `en-tete`: Est une liste des différents `titre` des menus exemple :
+```yaml
+en-tete:
+  - titre: "A la carte de Rosette"
+  - titre: "Nom du second menu"
+  - titre: "Nom du troisième menu"
+  [...]
+```
+- `date`: Date du menu
+- `menus`: Les différentes déclinaisons des menu (`titre`), avec leur prix associés (`prix`) exemple :
+```yaml
+menus:
+    - titre: "Entrée, plat, dessert"
+      prix: "27€"
+    - titre: "Entrée et plat"
+      prix: "23€"
+    - titre: "Plat et dessert"
+      prix: "22€"
+  [...]
+```
+- `temps`: Cet element est composé d'une liste de sections (Entrée, plats...), chacune de ces sections a un `titre` et une liste de `plats`. Chaque plat a un `titre` et un `prix`. Exemple : 
+```yaml
+temps:
+    - section:
+        - titre: "À GRIGNOTER" 
+          plats: 
+            - titre: "Rosette de Lyon"
+              prix: "/6"
+            - titre: "Paté en croûte cochon, canard, volaille, pickles"
+              prix: "/10"
+    - section: 
+        - titre: "ENTRÉES"
+          plats:
+            - titre: "Tartare de boeuf, curry, citron vert, oignon frit"
+              prix: "/12"
+            - titre: "Carottes glacées au gingembre, condiment aux herbes"
+              prix: "/9"
+            - titre: "Oeuf mimosa, jaune d’oeuf confit, ciboulette (Retour du marché)"
+              prix: ""
+  [...]
+```
+- `footer`: Le texte en bas du menu peut être modifié grace à cette variable.

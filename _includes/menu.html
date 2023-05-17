@@ -1,35 +1,49 @@
-<section id="menu">
-    <h1>Rosette</h1>
-    <h2>Semaine du 15 Mai 2023</h2>
+<dialog id="menu">
     <header>
-        <h3>À la carte de Rosette</h3>
-        <em>ou</em>
-        <h3>« Retour du marché »</h3>
-        <table>
-            {% for menu in site.data.menu_soir.menus %}
-            <tr>
-                <td>{{ menu.titre }}</td>
-                <td>{{ menu.prix }}</td>
-            </tr>
-            {% endfor %}
-        </table>
+        <button id="button-close-menu">X</button>
+        <nav>
+            <button id="button-show-midi">Midi</button>
+            <button id="button-show-soir">Soir</button>
+            <button id="button-show-carte">À la carte</button>
+        </nav>
     </header>
-    <main>
-        {% for part in site.data.menu_soir.temps %}
-        <div>
-            <h2>{{ part.section[0].titre }}:</h2>
-            <table>
-                {% for p in part.section[0].plats %}
-                <tr>
-                    <td>{{ p.titre }}</td>
-                    <td>{{ p.prix }}</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-        {% endfor %}
-    </main>
-    <footer>
-        Tous nos produits sont issus de l’agriculture biologique ou raisonnée. Toutes nos viandes sont françaises. 
-    </footer>
-</section>
+    {% include menu_soir.html %}
+    {% include menu_midi.html %}
+    {% include menu_carte.html %}
+</dialog>
+<script>
+const dialog = document.getElementById('menu');
+const soir = document.getElementById("button-show-soir");
+const midi = document.getElementById("button-show-midi");
+const carte = document.getElementById("button-show-carte");
+const close = document.getElementById("button-close-menu");
+
+const menu_soir = document.getElementById("menu-soir");
+const menu_midi = document.getElementById("menu-midi");
+const menu_carte = document.getElementById("menu-carte");
+
+menu_carte.classList.remove('hide')
+menu_soir.classList.add('hide')
+menu_midi.classList.add('hide')
+
+close.addEventListener('click', ()=>{dialog.close()})
+
+soir.addEventListener('click', ()=> {
+    menu_midi.classList.add('hide')
+    menu_carte.classList.add('hide')
+    menu_soir.classList.remove('hide')
+});
+
+midi.addEventListener('click', ()=> {
+    menu_soir.classList.add('hide')
+    menu_carte.classList.add('hide')
+    menu_midi.classList.remove('hide')
+});
+
+carte.addEventListener('click', ()=> {
+    menu_soir.classList.add('hide')
+    menu_midi.classList.add('hide')
+    menu_carte.classList.remove('hide')
+});
+
+</script>

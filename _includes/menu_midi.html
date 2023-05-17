@@ -1,0 +1,37 @@
+<section id="menu-midi" class="menu-content">
+    <h1>Rosette</h1>
+    <h2>{{ site.data.menu_midi.date }}</h2>
+    <header>
+        {% for menu in site.data.menu_midi.en-tete %}
+        <h3>{{ menu.titre }}</h3>
+        {% if forloop.last == false %}
+            <em>ou</em>
+        {% endif %}
+        {% endfor %}
+
+        <table>
+            {% for menu in site.data.menu_midi.menus %}
+            <tr>
+                <td>{{ menu.titre }}</td>
+                <td>{{ menu.prix }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </header>
+    <main>
+        {% for part in site.data.menu_midi.temps %}
+        <div>
+            <h2>{{ part.section[0].titre }}:</h2>
+            <table>
+                {% for p in part.section[0].plats %}
+                <tr>
+                    <td>{{ p.titre }}</td>
+                    <td>{{ p.prix }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% endfor %}
+    </main>
+    <footer>{{ site.data.menu_midi.footer }}</footer>
+</section>

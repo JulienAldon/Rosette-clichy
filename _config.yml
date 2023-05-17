@@ -26,7 +26,6 @@ url: https://julienaldon.github.io
 instagram_url: https://instagram.com
 facebook_url: https://facebook.com
 
-# baseurl: localhost:4000
 theme: minima
 plugins:
   - jekyll-feed

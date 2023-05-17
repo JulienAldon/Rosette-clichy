@@ -6,7 +6,7 @@
             <a href="{{ item.url }}">{{ item.title }}</a>
             </li>
         {% endfor %}
-        <a href="" class="calltoaction">Menu</a>
+        <button onclick="showmenu()" class="calltoaction">Menu</button>
     </ul>
 </nav>
 <div class="nav-container">
@@ -30,7 +30,23 @@
         </nav>
     </label>
     <a id="rosette">Rosette</a>
-    <a href="" class="calltoaction">Menu</a>
+    <button onclick="showmenu()" class="calltoaction">Menu</button>
 </div>
 
 <div class="overlay"></div>
+<script>
+function showmenu() {
+    const modal = document.querySelector("#menu");
+    modal.addEventListener('click', (event) => {
+        var rect = modal.getBoundingClientRect();
+        var isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+          && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+        if (!isInDialog) {
+            modal.close();
+        }
+    })
+    modal.showModal();
+}
+
+
+</script>
