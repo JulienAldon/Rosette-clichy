@@ -1,0 +1,49 @@
+menus:
+    - titre: "Entrée, plat, dessert"
+      prix: "27€"
+    - titre: "Entrée et plat"
+      prix: "23€"
+    - titre: "Plat et dessert"
+      prix: "22€"
+temps:
+    - section:
+        - titre: "À GRIGNOTER" 
+          plats: 
+            - titre: "Rosette de Lyon"
+              prix: "/6"
+            - titre: "Paté en croûte cochon, canard, volaille, pickles"
+              prix: "/10"
+    - section: 
+        - titre: "ENTRÉES"
+          plats:
+            - titre: "Tartare de boeuf, curry, citron vert, oignon frit"
+              prix: "/12"
+            - titre: "Carottes glacées au gingembre, condiment aux herbes"
+              prix: "/9"
+            - titre: "Oeuf mimosa, jaune d’oeuf confit, ciboulette (Retour du marché)"
+              prix: ""
+    - section:
+        - titre: "PLATS"
+          plats:
+            - titre: "Lotte rôtie meunière, asperges vertes, beurre montée au citron"
+              prix: "/24"
+            - titre: "Cuisse de volaille confite et grillée, purée de pommes de terre, cresson"
+              prix: "/21"
+            - titre: "Asperges blanches, polenta, sauce mousseline aux agrumes"
+              prix: "/19"
+            - titre: "Carré de cochon, pommes de terre croustillante, mayonnaise graines de moutarde (Retour du marché)"
+              prix: ""
+    - section:
+        - titre: "FROMAGE"
+          plats:
+            - titre: "Assiette de fromages, condiment fraises poivre long"
+              prix: "/10"
+    - section:
+        - titre: "DESSERTS"
+          plats: 
+            - titre: "Tarte aux pommes confites, crème crue montée à la vanille, praliné noisettes du Piémont"
+              prix: "/10"
+            - titre: "Le gâteau au chocolat de Rosette"
+              prix: "/10"
+            - titre: "Choux, caramel au beurre salé (Retour du marché)"
+              prix: ""
