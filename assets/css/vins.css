@@ -13,7 +13,7 @@
     align-self: center;
 }
 
-@media screen and (max-width: 80rem) {
+@media screen and (max-width: 1500px) {
     #vins img {
         height: 25rem;
         width: 20rem;

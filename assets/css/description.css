@@ -18,7 +18,7 @@ article {
     margin-right: 5rem;
 }
 
-@media screen and (max-width: 80rem) {
+@media screen and (max-width: 1500px) {
     article {
         flex-direction: column;
     }

@@ -16,9 +16,10 @@
     display: flex;
     align-self: center;
     width: 100%;
+    height: 100%;
 }
 
-@media screen and (max-width: 80rem) {
+@media screen and (max-width: 1500px) {
     .rosette-landing {
         display: flex;
         flex-flow: column;

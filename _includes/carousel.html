@@ -27,7 +27,7 @@
         <div class="carousel__track">
           <ul>
             {% for item in page.carousels[number].images %}
-            <li class="carousel__slide" style="background-image: url('{{ item.image }}');"></li>
+            <li class="carousel__slide" style="background-position: center; background-image: url('{{ item.image }}');"></li>
             {% endfor %}
           </ul>
         </div>
@@ -40,7 +40,7 @@
 </div>
 
 <style>
-.carousel__holder {width: 100%; height: 20vh; position: relative; padding-bottom: {{ include.height }}{{ include.unit }};}
+.carousel__holder {width: 100%; height: 100%; position: relative;}
 .carousel {
   height: 100%;
   width: 100%;
@@ -110,10 +110,12 @@
           transform: rotate(45deg);
 }
 .carousel__indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 20px;
   width: 100%;
-  text-align: center;
 }
 .carousel__indicator {
   transition: width, height 0.2s ease;
@@ -179,12 +181,12 @@
   background-size: cover;
 }
 {% endfor %}
-@media screen and (max-width: 80rem) {
+@media screen and (max-width: 1500px) {
     .carousel {
       border-radius: 0.3rem;
     }
     .carousel__holder {
-      height: 60vh;
+      height: 100%;
     }
 }
 </style>

@@ -1,12 +1,14 @@
 <nav id="main-menu">
     <ul>
         <li><a id="rosette-menu" href="{{ site.baseurl }}/">Rosette</a></li>
+        <ul class="menu-links">
         {% for item in site.data.navigation.nav %}
             <li class="{% if item.url == page.url %}active{% else %}inactive{% endif %}">
             <a href="{{ item.url }}">{{ item.title }}</a>
             </li>
         {% endfor %}
-        <button onclick="showmenu()" class="calltoaction">Menu</button>
+        </ul>
+        <li><button onclick="showmenu()" class="calltoaction">Menu</button></li>
     </ul>
 </nav>
 <div class="nav-container">

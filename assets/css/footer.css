@@ -26,7 +26,7 @@ footer li a:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 80rem) {
+@media screen and (max-width: 1500px) {
     footer {
         flex: 0;
         font-size: 1rem;
