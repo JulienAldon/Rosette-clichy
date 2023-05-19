@@ -1,10 +1,12 @@
 @font-face {
     font-family: 'Authoritative';
+    font-display: auto;
     src: url("../fonts/Authoritative.otf");
 }
 
 @font-face {
     font-family: 'Century';
+    font-display: auto;
     src: url("../fonts/Century.ttf")
 }
 

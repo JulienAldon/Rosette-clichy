@@ -21,10 +21,19 @@
 title: Rosette Clichy
 email: julien.aldon@epitech.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Rosette clichy est un réstaurant en plein coeur de clichy, découvrez son menu, ses vin, et ses horraires.
+  Rosette clichy est un restaurant en plein coeur de clichy, découvrez son menu, ses vin, et ses horraires.
 url: https://julienaldon.github.io
 instagram_url: https://instagram.com
 facebook_url: https://facebook.com
+
+forme_juridique: "Société à responsabilité limitée"
+capital_social: "5 000,00 €"
+adresse: "77 RUE DE PARIS 92110 CLICHY"
+immatriculation: "921460770"
+mail: "contact@rosette-restaurant.fr"
+telephone: "01.47.72.67.51"
+identification_tva: "FR80921460770"
+hebergeur: "Github Pages"
 
 theme: minima
 plugins:

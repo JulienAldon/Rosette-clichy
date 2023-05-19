@@ -1,0 +1,12 @@
+#legal {
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#legal p {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 60vw;
+}
