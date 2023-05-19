@@ -18,9 +18,9 @@
             <ul>
                 <li><a href="{{ site.baseurl }}/">Rosette</a></li>
                 {% for item in site.data.navigation.nav %}
-                    <li class="{% if item.url == page.url %}active{% else %}inactive{% endif %}">
+                <li class="{% if item.url == page.url %}active{% else %}inactive{% endif %}">
                     <a href="{{ item.url }}">{{ item.title }}</a>
-                    </li>
+                </li>
                 {% endfor %}
                 <li class="social-container">
                     <a target="_blank" href="{{ site.instagram_url }}"><i class="fa-brands fa-instagram"></i></a> 
