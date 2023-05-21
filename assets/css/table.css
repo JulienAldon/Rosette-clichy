@@ -16,7 +16,7 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 80rem) {
+@media screen and (max-width: 1500px) {
     .image-row {
         align-items: center;
         flex-direction: column;

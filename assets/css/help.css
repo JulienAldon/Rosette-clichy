@@ -5,9 +5,13 @@
     flex: 1;
 }
 
-#help p {
+#help .content {
     display: flex;
-    align-self: center;
+}
+
+#help p {
     width: 60vw;
+    align-self: center;
     font-size: 1.2rem;
+    text-align: justify;
 }

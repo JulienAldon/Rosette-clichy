@@ -37,6 +37,13 @@
 
 <div class="overlay"></div>
 <script>
+addEventListener('load', (event) => {
+    const modal = document.querySelector("#menu");
+    if (window.location.hash == "#menu") {
+        modal.showModal();
+    }
+});
+
 function showmenu() {
     const modal = document.querySelector("#menu");
     modal.addEventListener('click', (event) => {

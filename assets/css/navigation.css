@@ -43,7 +43,7 @@
     font-size: 1.3rem;
 }
 
-#main-menu a:hover {
+.menu-links li:hover {
     text-decoration: underline;
 }
 
@@ -64,8 +64,7 @@
 #rosette {
     display: none;
     font-family: "Authoritative";
-    font-size: 2.5rem;
-    padding-right: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
     flex: 1;
     align-self: center;
@@ -83,6 +82,7 @@
     font-family: "Authoritative";
     font-size: 4rem;
     color: #6b1e24;
+    text-decoration: none;
 }
 
 #sidebar-menu ul {
@@ -151,10 +151,6 @@
     text-decoration: none;
 }
 
-#hamburger-menu a:hover {
-    text-decoration: underline;
-}
-
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
     visibility: visible;
     left: 0;
@@ -198,16 +194,16 @@
     }
     #hamburger-menu {
         display: flex;
-        margin-top: 1rem
+        margin-top: 0.6rem
     }
 
     .nav-container {
         display: flex;
         visibility: visible;
         padding: 0rem 1rem;
+        padding-top: 1rem;
     }
     .calltoaction {
         align-self: center;
-        margin-right: 1rem;
     }
 }

@@ -35,6 +35,52 @@ mail: "contact@rosette-restaurant.fr"
 telephone: "01.47.72.67.51"
 identification_tva: "FR80921460770"
 hebergeur: "Github Pages"
+google_structured_data: |
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Restaurant",
+      "address": {
+        "@type": "PostalAdress"
+        "addressLocality": "Paris",
+        "addressCountry": "FR",
+        "postalCode": "92110",
+        "streetAddress": "77 Rue de Paris, 92110 Clichy"
+      },
+      "email": "contact@rosette-restaurant.fr",
+      "name": "Rosette",
+      "legalname": "Rosette",
+      "description": "Rosette est un restaurant francais en plein coeur de Clichy, découvrez son menu de saison composé et sourcé avec amour et ses nombreuses références de vins recherchés spécialement pour vous.",
+      "currenciesAccepted": "EUR",
+      "priceRange": "$$",
+      "openingHours": [
+        "Mo 12:00-14:00",
+        "Mo 19:00-20:00",
+        "Tu 12:00-14:00",
+        "Tu 19:00-20:00",
+        "Th 12:00-14:00",
+        "Th 19:00-20:00",
+        "We 12:00-14:00",
+        "We 19:00-20:00",
+        "Fr 12:00-14:00",
+        "Fr 19:00-20:00",
+        "Sa 12:00-14:00",
+        "Sa 19:00-20:00"
+      ],
+      "servesCuisine":"Francaise",
+      "paymentAccepted": "Cartes de paiement, Chèques Déjeuner, Chèques, Ticket Restaurant, Carte de crédit",
+      "logo": "https://www.rosette-restaurant.fr/favicon.ico"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "48.90054612766114",
+        "longitude": "2.304050777189373",
+      },
+      "image": "",
+      "url": "https://www.rosette-restaurant.fr",
+      "menu": "https://www.rosette-restaurant.fr#menu"
+    }
+    </script>
+
 
 theme: minima
 plugins:
