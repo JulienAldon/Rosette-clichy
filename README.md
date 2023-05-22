@@ -27,6 +27,9 @@
     - [assets/fonts/](./assets/fonts/) : Vous n'avez pas besoin de vous en occuper sauf si vous souhaitez changer la police d'écriture.
     - [assets/css/](./assets/css/) : Vous n'avez pas besoin de vous en occuper. Ce sont toutes les feuilles de style du site.
 - [_layouts/main.html](./_layouts/main.html) : Ce fichier est la base du theme si il y a une nouvelle feuille de style il faut l'ajouter ici. Vous n'avez pas à la modifier.
+- [_data/menu_soir.yaml](./_data/menu_soir.yaml) : Modification du menu du soir.
+- [_data/menu_midi.yaml](./_data/menu_midi.yaml) : Modification du menu du midi.
+- [_data/menu_carte.yaml](./_data/menu_carte.yaml) : Modification du menu de la carte.
 
 # 2 - Mise en production
 Tout est automatique via `Github Action`.
@@ -71,7 +74,7 @@ images:
     [...]
 </section>
 ```
-## 3 - Modifier les menu
+## 3 - Modifier les menus
 Il y a 3 menu actifs décrits par ces fichiers:
 - [menu_soir](_data/menu_soir.yaml)
 - [menu_midi](_data/menu_midi.yaml)

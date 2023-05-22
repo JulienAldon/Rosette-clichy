@@ -69,7 +69,7 @@ google_structured_data: |
       ],
       "servesCuisine":"Francaise",
       "paymentAccepted": "Cartes de paiement, Chèques Déjeuner, Chèques, Ticket Restaurant, Carte de crédit",
-      "logo": "https://www.rosette-restaurant.fr/favicon.ico"
+      "logo": "https://www.rosette-restaurant.fr/favicon.ico",
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": "48.90054612766114",
