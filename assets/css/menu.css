@@ -4,13 +4,19 @@
     background-color: #fffcf6;
     width: 60vw;
     align-self: center;
-    transition: all 1s ease-in-out;
     border: none;
+    transition: all 0.5s linear;
+    transform: translateY(-110%);
 }
 
 .hide {
     display: none!important;
 }
+
+#menu.open {
+    transform: translateY(0%);
+}
+
 
 #menu button {
     border: none;
@@ -36,6 +42,24 @@
 .menu-content {
     display: flex;
     flex-direction: column;
+}
+
+
+#button-show-midi:hover {
+    font-size: 1rem;
+    transition: all ease-in-out 0.4s;
+}
+
+#button-show-soir:hover {
+    font-size: 1rem;
+    transition: all ease-in-out 0.4s;
+
+}
+
+#button-show-carte:hover {
+    font-size: 1rem;
+    transition: all ease-in-out 0.4s;
+
 }
 
 #menu::backdrop {

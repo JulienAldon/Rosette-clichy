@@ -40,9 +40,21 @@
 addEventListener('load', (event) => {
     const modal = document.querySelector("#menu");
     if (window.location.hash == "#menu") {
-        modal.showModal();
+        openModal(modal);
     }
 });
+
+function closeModal(modal) {
+    modal.classList.remove('open');
+    setTimeout(function() {
+        modal.close();
+    }, 600);
+}
+
+function openModal(modal) {
+    modal.showModal();
+    modal.classList.add('open');
+}
 
 function showmenu() {
     const modal = document.querySelector("#menu");
@@ -51,10 +63,10 @@ function showmenu() {
         var isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
           && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
         if (!isInDialog) {
-            modal.close();
+            closeModal(modal);
         }
     })
-    modal.showModal();
+    openModal(modal);
 }
 
 
