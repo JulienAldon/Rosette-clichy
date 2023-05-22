@@ -41,7 +41,7 @@ google_structured_data: |
       "@context": "https://schema.org/",
       "@type": "Restaurant",
       "address": {
-        "@type": "PostalAdress"
+        "@type": "PostalAdress",
         "addressLocality": "Paris",
         "addressCountry": "FR",
         "postalCode": "92110",
