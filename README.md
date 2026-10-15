@@ -13,7 +13,7 @@
 - [help.html](./help.html) : Page "Ils nous ont aidés".
 - [table.html](./table.html) : Page "La table".
 - [vins.html](./vins.html) : Page "Les vins".
-- [description.html](./description.html) : Page "Qui sommes nous?"
+- [description.html](./description.html) : Page "Qui suis-je ?"
 - [_config.yml](./_config.yml) : Contient des variables gloabales au site :
     - `title` : titre du site.
     - `instagram_url` : Adresse utilisé pour l'instagrame de rosette.
